@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Establecemos el conjunto de caracteres a UTF-8 para soportar todos los caracteres -->
+    <meta charset="UTF-8">
+    <!-- Hacemos que el sitio web sea responsivo para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Constructor de vídeos VOX provincia de Alicante</title>
+    <!-- Icono de la página (favicon) -->
+    <link rel="icon" type="image/png" href="/static/logo/logo.png">
+    <!-- Archivo de manifiesto para aplicaciones web progresivas (PWA) -->
+    <link rel="manifest" href="/static/manifest.json">
+    <!-- Cargamos el script de Socket.IO desde un CDN para la comunicación en tiempo real -->
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <style>
+        /* Estilos generales para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        /* Estilos para el contenedor principal */
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+        /* Estilo del título principal */
+        h1 {
+            color: #23356f;
+        }
+        /* Estilo del logo */
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        /* Estilos para las secciones del formulario */
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .section div {
+            width: 100%;
+            max-width: 45%;
+            box-sizing: border-box;
+        }
+        label, select, input {
+            width: 100%;
+            max-width: 100%;
+        }
+        /* Estilos para los elementos del formulario */
+        select, input[type="file"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        /* Estilos para el botón de enviar */
+        button {
+            background-color: #6db032;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #5ca028;
+        }
+        /* Estilos para la barra de progreso */
+        #progress {
+            width: 100%;
+            background-color: #f3f3f3;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        #progress-bar {
+            width: 0%;
+            height: 30px;
+            background-color: #6db032;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            border-radius: 4px;
+        }
+        #message, #download-link {
+            margin-top: 20px;
+        }
+        /* Estilos para la línea horizontal */
+        hr {
+            border: none;
+            border-top: 3px solid #23356f;
+            margin: 20px 0;
+        }
+        /* Estilos para el pie de página */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+        .footer-logo {
+            width: 120px;
+            margin-top: 10px;
+        }
+        /* Media Queries para hacer la página responsiva */
+        @media (max-width: 768px) {
+            .section div {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            #progress-bar {
+                height: 20px;
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo de VOX Alicante -->
+        <img src="/static/logo/logo.png" alt="Logo VOX Alicante" class="logo">
+        <!-- Título de la aplicación -->
+        <h1>Constructor de vídeos VOX provincia de Alicante</h1>
+        
+        <!-- Formulario para subir videos -->
+        <form id="uploadForm" action="/videos/uploaded" method="post" enctype="multipart/form-data">
+            <!-- Campo oculto para el ID de la sesión de Socket.IO -->
+            <input type="hidden" name="sid" id="sid">
+            
+            <div class="section">
+                <div>
+                    <p>Lo primero que tienes que hacer es seleccionar tu municipio</p>
+                </div>
+                <div>
+                    <label for="municipio">Selecciona el municipio:</label>
+                    <!-- Menú desplegable para seleccionar el municipio -->
+                    <select name="municipio" id="municipio">
+                        {% if municipios %}
+                            <!-- Rellenamos el menú desplegable con los municipios cargados desde el servidor -->
+                            {% for municipio in municipios %}
+                                <option value="{{ municipio }}">{{ municipio }}</option>
+                            {% endfor %}
+                        {% else %}
+                            <!-- Mensaje de error si no se encontraron municipios -->
+                            <option value="">No se encontraron municipios</option>
+                        {% endif %}
+                    </select>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="section">
+                <div>
+                    <p>Ahora tienes que seleccionar tu vídeo en tu ordenador / dispositivo, lo seleccionas y lo cargamos para trabajar con él.</p>
+                </div>
+                <div>
+                    <label for="file">Selecciona el video:</label>
+                    <!-- Input para seleccionar un archivo de video -->
+                    <input type="file" name="file" id="file" required>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="section">
+                <div>
+                    <p>Ahora vamos a lo importante... ¿Dónde vas a reproducir el vídeo? Piénsalo bien.</p>
+                    <p>Si lo vas a reproducir en diferentes redes sociales, es posible que tengas que hacer este proceso varias veces...</p>
+                    <label for="format">Selecciona el formato del video:</label>
+                    <!-- Menú desplegable para seleccionar el formato del video -->
+                    <select name="format" id="format" required>
+                        <option value="horizontal">Horizontal (16:9)</option>
+                        <option value="square">Cuadrado (1:1)</option>
+                        <option value="vertical">Vertical (9:16)</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Si has grabado tu vídeo en horizontal y quieres que aparezca toda la información, sin perder ningún detalle de tu vídeo, y lo vas a utilizar en Twitter y Facebook, selecciona Horizontal 16:9</p>
+                    <p>Si has grabado tu vídeo en horizontal, y lo importante sale grabado en el centro (por ejemplo, tú hablando), y vas a utilizar el vídeo en Twitter, Facebook e Instagram, entonces selecciona 1:1</p>
+                    <p>Si has grabado tu vídeo en vertical, y vas a utilizarlo para stories en Instagram y Facebook, o para pasarlo por whatsapp, entonces utiliza la opción de vertical 9:16.</p>
+                    <p>Recuerda NO UTILIZAR el vídeo vertical 9:16 para ponerlo en post en twitter, facebook o instagram. Si tienes alguna duda, pregunta al responsable de comunicación y te asesorará.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <p>Una vez que ya tienes claro el vídeo, dale al botón de Subir y crear el vídeo. TARDARÁ EN PROCESAR, dependerá de lo largo que sea tu vídeo, no desesperes.</p>
+            <!-- Botón para enviar el formulario y subir el video -->
+            <button type="submit">Subir y crear el vídeo</button>
+        </form>
+
+        <!-- Barra de progreso para mostrar el estado del procesamiento del video -->
+        <div id="progress">
+            <div id="progress-bar">0%</div>
+        </div>
+
+        <p>Cuando finalice el proceso, aquí debajo saldrá la opción de descargar tu vídeo, tranquilidad</p>
+        <!-- Mensaje de progreso -->
+        <div id="message"></div>
+        <!-- Enlace de descarga del video procesado -->
+        <div id="download-link"></div>
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        <!-- Logo en el pie de página -->
+        <img src="/static/logo/logo.png" alt="Logo VOX Alicante" class="footer-logo">
+        <p>Realizada por Rubén Maestre</p>
+    </div>
+
+    <script>
+        // Conectamos con el servidor usando Socket.IO
+        const socket = io();
+
+        // Cuando se conecta, guardamos el ID de la sesión en un campo oculto del formulario
+        socket.on('connect', function() {
+            document.getElementById('sid').value = socket.id;
+        });
+
+        // Actualizamos la barra de progreso cuando recibimos un mensaje de progreso del servidor
+        socket.on('progress', function(data) {
+            const progressBar = document.getElementById('progress-bar');
+            progressBar.style.width = data.progress + '%';
+            progressBar.textContent = data.progress + '%';
+            document.getElementById('message').textContent = data.message;
+        });
+
+        // Mostramos el enlace de descarga cuando el servidor nos lo envía
+        socket.on('download', function(data) {
+            const downloadLink = document.getElementById('download-link');
+            downloadLink.innerHTML = `<a href="${data.url}" download>Descargar Video Procesado</a>`;
+        });
+
+        // Manejamos el envío del formulario usando JavaScript para evitar que la página se recargue
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            fetch(this.action, {
+                method: 'POST',
+                body: formData
+            }).then(response => response.json()).then(data => {
+                console.log(data);
+            }).catch(error => {
+                console.error('Error:', error);
+            });
+        });
+
+        // Registramos un Service Worker para la PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/static/service-worker.js')
+            .then(function(registration) {
+                console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch(function(error) {
+                console.log('Error al registrar el Service Worker:', error);
+            });
+        }
+    </script>
+</body>
+</html>

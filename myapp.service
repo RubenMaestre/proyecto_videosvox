@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve my Flask application
+After=network.target
+
+[Service]
+User=videovox2024
+Group=pg4306900
+WorkingDirectory=/home/videovox2024/voxvideos.rubenmaestre.com
+Environment="PATH=/home/videovox2024/voxvideos.rubenmaestre.com/venv/bin"
+ExecStart=/home/videovox2024/voxvideos.rubenmaestre.com/run_gunicorn.sh
+
+[Install]
+WantedBy=multi-user.target

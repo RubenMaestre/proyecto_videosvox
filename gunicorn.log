@@ -1,0 +1,366 @@
+[2024-06-07 08:08:14 -0700] [6295] [INFO] Starting gunicorn 22.0.0
+[2024-06-07 08:08:14 -0700] [6295] [INFO] Listening at: http://0.0.0.0:8002 (6295)
+[2024-06-07 08:08:14 -0700] [6295] [INFO] Using worker: eventlet
+[2024-06-07 08:08:14 -0700] [6416] [INFO] Booting worker with pid: 6416
+Server initialized for eventlet.
+AZv845Zpbw4z87KHAAAA: Sending packet OPEN data {'sid': 'AZv845Zpbw4z87KHAAAA', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+AZv845Zpbw4z87KHAAAA: Received packet MESSAGE data 0
+emitting event "connected" to RoGtsG064cacpxBCAAAB [/]
+AZv845Zpbw4z87KHAAAA: Sending packet MESSAGE data 2["connected",{"sid":"RoGtsG064cacpxBCAAAB"}]
+AZv845Zpbw4z87KHAAAA: Sending packet MESSAGE data 0{"sid":"RoGtsG064cacpxBCAAAB"}
+Invalid session RcaPSfCvDL46ARCqAAAk (further occurrences of this error will be logged with level INFO)
+Invalid session RcaPSfCvDL46ARCqAAAk
+Invalid session RcaPSfCvDL46ARCqAAAk
+jFEBcry5092h3KURAAAC: Sending packet OPEN data {'sid': 'jFEBcry5092h3KURAAAC', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+jFEBcry5092h3KURAAAC: Received packet MESSAGE data 0
+emitting event "connected" to s3Zjy3qrk60lH_P9AAAD [/]
+jFEBcry5092h3KURAAAC: Sending packet MESSAGE data 2["connected",{"sid":"s3Zjy3qrk60lH_P9AAAD"}]
+jFEBcry5092h3KURAAAC: Sending packet MESSAGE data 0{"sid":"s3Zjy3qrk60lH_P9AAAD"}
+hMo5g1XC5faYPfyyAAAE: Sending packet OPEN data {'sid': 'hMo5g1XC5faYPfyyAAAE', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+hMo5g1XC5faYPfyyAAAE: Received packet MESSAGE data 0
+emitting event "connected" to 8DsiY5wRty7EgrTAAAAF [/]
+hMo5g1XC5faYPfyyAAAE: Sending packet MESSAGE data 2["connected",{"sid":"8DsiY5wRty7EgrTAAAAF"}]
+hMo5g1XC5faYPfyyAAAE: Sending packet MESSAGE data 0{"sid":"8DsiY5wRty7EgrTAAAAF"}
+Vve5_a4NkaiGlbo-AAAG: Sending packet OPEN data {'sid': 'Vve5_a4NkaiGlbo-AAAG', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+Vve5_a4NkaiGlbo-AAAG: Received packet MESSAGE data 0
+emitting event "connected" to 29eHJK3BgbJfduGAAAAH [/]
+Vve5_a4NkaiGlbo-AAAG: Sending packet MESSAGE data 2["connected",{"sid":"29eHJK3BgbJfduGAAAAH"}]
+Vve5_a4NkaiGlbo-AAAG: Sending packet MESSAGE data 0{"sid":"29eHJK3BgbJfduGAAAAH"}
+AZv845Zpbw4z87KHAAAA: Sending packet PING data None
+jFEBcry5092h3KURAAAC: Sending packet PING data None
+hMo5g1XC5faYPfyyAAAE: Sending packet PING data None
+Vve5_a4NkaiGlbo-AAAG: Sending packet PING data None
+emitting event "progress" to 29eHJK3BgbJfduGAAAAH [/]
+Vve5_a4NkaiGlbo-AAAG: Sending packet MESSAGE data 2["progress",{"progress":10,"message":"Video subido"}]
+emitting event "progress" to 29eHJK3BgbJfduGAAAAH [/]
+Vve5_a4NkaiGlbo-AAAG: Sending packet MESSAGE data 2["progress",{"progress":20,"message":"Verificando formato del video"}]
+emitting event "progress" to 29eHJK3BgbJfduGAAAAH [/]
+Vve5_a4NkaiGlbo-AAAG: Sending packet MESSAGE data 2["progress",{"progress":30,"message":"Video convertido a MP4"}]
+emitting event "progress" to 29eHJK3BgbJfduGAAAAH [/]
+Vve5_a4NkaiGlbo-AAAG: Sending packet MESSAGE data 2["progress",{"progress":45,"message":"Cargando datos de mapeo"}]
+emitting event "progress" to 29eHJK3BgbJfduGAAAAH [/]
+Vve5_a4NkaiGlbo-AAAG: Sending packet MESSAGE data 2["progress",{"progress":70,"message":"Videos ajustados"}]
+Cliente conectado: RoGtsG064cacpxBCAAAB
+Cliente conectado: s3Zjy3qrk60lH_P9AAAD
+Cliente conectado: 8DsiY5wRty7EgrTAAAAF
+Cliente conectado: 29eHJK3BgbJfduGAAAAH
+Video guardado en: static/videos/uploaded/superbowl.mp4
+Moviepy - Building video static/videos/output/final_superbowl.mp4.
+MoviePy - Writing audio in final_superbowlTEMP_MPY_wvf_snd.mp4
+chunk:   0%|          | 0/714 [00:00<?, ?it/s, now=None]chunk:  29%|██▊       | 204/714 [00:00<00:00, 2020.79it/s, now=None]chunk:  59%|█████▉    | 422/714 [00:00<00:00, 2112.57it/s, now=None]chunk:  89%|████████▉ | 634/714 [00:00<00:00, 1810.10it/s, now=None]                                                                    MoviePy - Done.
+Moviepy - Writing video static/videos/output/final_superbowl.mp4
+
+t:   0%|          | 0/971 [00:00<?, ?it/s, now=None]t:   2%|▏         | 17/971 [00:00<00:05, 161.92it/s, now=None]t:   5%|▍         | 47/971 [00:00<00:05, 156.05it/s, now=None]t:   6%|▋         | 63/971 [00:00<00:06, 151.19it/s, now=None]t:   8%|▊         | 80/971 [00:00<00:05, 153.92it/s, now=None]t:  11%|█         | 108/971 [00:00<00:04, 192.06it/s, now=None]t:  13%|█▎        | 128/971 [00:00<00:04, 174.45it/s, now=None]t:  15%|█▌        | 146/971 [00:00<00:05, 145.98it/s, now=None]t:  17%|█▋        | 168/971 [00:01<00:05, 160.09it/s, now=None]t:  19%|█▉        | 187/971 [00:01<00:04, 167.71it/s, now=None]t:  22%|██▏       | 211/971 [00:01<00:04, 185.12it/s, now=None]t:  24%|██▍       | 237/971 [00:01<00:03, 204.06it/s, now=None]t:  27%|██▋       | 259/971 [00:01<00:03, 196.78it/s, now=None]t:  30%|██▉       | 287/971 [00:01<00:03, 211.64it/s, now=None]t:  32%|███▏      | 315/971 [00:01<00:02, 229.35it/s, now=None]t:  36%|███▌      | 349/971 [00:01<00:02, 260.00it/s, now=None]t:  39%|███▉      | 377/971 [00:01<00:02, 253.81it/s, now=None]t:  42%|████▏     | 403/971 [00:02<00:02, 222.70it/s, now=None]t:  44%|████▍     | 428/971 [00:02<00:02, 226.32it/s, now=None]t:  47%|████▋     | 453/971 [00:02<00:02, 231.27it/s, now=None]t:  49%|████▉     | 477/971 [00:02<00:02, 205.54it/s, now=None]t:  52%|█████▏    | 503/971 [00:02<00:02, 218.46it/s, now=None]t:  54%|█████▍    | 526/971 [00:02<00:02, 204.38it/s, now=None]t:  57%|█████▋    | 553/971 [00:02<00:01, 220.34it/s, now=None]t:  59%|█████▉    | 577/971 [00:02<00:01, 225.59it/s, now=None]t:  63%|██████▎   | 607/971 [00:02<00:01, 246.25it/s, now=None]t:  65%|██████▌   | 633/971 [00:03<00:01, 247.12it/s, now=None]t:  68%|██████▊   | 659/971 [00:03<00:01, 216.78it/s, now=None]t:  70%|███████   | 683/971 [00:03<00:01, 221.33it/s, now=None]t:  73%|███████▎  | 708/971 [00:03<00:01, 224.66it/s, now=None]t:  75%|███████▌  | 731/971 [00:03<00:01, 171.20it/s, now=None]t:  77%|███████▋  | 751/971 [00:04<00:03, 57.88it/s, now=None] t:  79%|███████▉  | 766/971 [00:05<00:04, 41.24it/s, now=None]t:  80%|████████  | 777/971 [00:05<00:05, 33.82it/s, now=None]t:  81%|████████  | 785/971 [00:06<00:06, 28.94it/s, now=None]t:  82%|████████▏ | 792/971 [00:06<00:06, 27.35it/s, now=None]AZv845Zpbw4z87KHAAAA: Client is gone, closing socket
+Invalid session AZv845Zpbw4z87KHAAAA
+t:  82%|████████▏ | 797/971 [00:07<00:06, 25.70it/s, now=None]t:  82%|████████▏ | 801/971 [00:07<00:06, 24.64it/s, now=None]t:  83%|████████▎ | 805/971 [00:07<00:07, 22.76it/s, now=None]t:  83%|████████▎ | 808/971 [00:07<00:07, 21.13it/s, now=None]t:  84%|████████▎ | 811/971 [00:07<00:08, 19.92it/s, now=None]V2jY-x5nfWW_CEg5AAAI: Sending packet OPEN data {'sid': 'V2jY-x5nfWW_CEg5AAAI', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+t:  84%|████████▍ | 814/971 [00:08<00:08, 18.87it/s, now=None]V2jY-x5nfWW_CEg5AAAI: Received packet MESSAGE data 0
+emitting event "connected" to QvrP8WYqj0WngwRwAAAJ [/]
+V2jY-x5nfWW_CEg5AAAI: Sending packet MESSAGE data 2["connected",{"sid":"QvrP8WYqj0WngwRwAAAJ"}]
+V2jY-x5nfWW_CEg5AAAI: Sending packet MESSAGE data 0{"sid":"QvrP8WYqj0WngwRwAAAJ"}
+t:  84%|████████▍ | 817/971 [00:08<00:08, 18.71it/s, now=None]t:  84%|████████▍ | 819/971 [00:08<00:08, 18.92it/s, now=None]t:  85%|████████▍ | 821/971 [00:08<00:07, 18.87it/s, now=None]t:  85%|████████▍ | 823/971 [00:08<00:07, 18.89it/s, now=None]t:  85%|████████▍ | 825/971 [00:08<00:08, 17.97it/s, now=None]jFEBcry5092h3KURAAAC: Client is gone, closing socket
+t:  85%|████████▌ | 827/971 [00:08<00:08, 16.16it/s, now=None]Invalid session jFEBcry5092h3KURAAAC
+t:  85%|████████▌ | 829/971 [00:08<00:08, 16.85it/s, now=None]t:  86%|████████▌ | 832/971 [00:09<00:07, 18.04it/s, now=None]t:  86%|████████▌ | 835/971 [00:09<00:07, 19.33it/s, now=None]t:  86%|████████▌ | 837/971 [00:09<00:06, 19.32it/s, now=None]t:  87%|████████▋ | 840/971 [00:09<00:06, 19.80it/s, now=None]hMo5g1XC5faYPfyyAAAE: Client is gone, closing socket
+t:  87%|████████▋ | 843/971 [00:09<00:06, 20.54it/s, now=None]t:  87%|████████▋ | 846/971 [00:09<00:06, 19.48it/s, now=None]t:  87%|████████▋ | 848/971 [00:09<00:06, 19.02it/s, now=None]t:  88%|████████▊ | 850/971 [00:09<00:06, 18.57it/s, now=None]t:  88%|████████▊ | 853/971 [00:10<00:06, 19.20it/s, now=None]t:  88%|████████▊ | 855/971 [00:10<00:06, 19.16it/s, now=None]t:  88%|████████▊ | 857/971 [00:10<00:06, 18.46it/s, now=None]KnTGBNQKbqRbBXpWAAAK: Sending packet OPEN data {'sid': 'KnTGBNQKbqRbBXpWAAAK', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+t:  88%|████████▊ | 859/971 [00:10<00:06, 16.65it/s, now=None]t:  89%|████████▊ | 861/971 [00:10<00:06, 16.79it/s, now=None]KnTGBNQKbqRbBXpWAAAK: Received packet MESSAGE data 0
+emitting event "connected" to O5KUAHLr9QqxEGRfAAAL [/]
+KnTGBNQKbqRbBXpWAAAK: Sending packet MESSAGE data 2["connected",{"sid":"O5KUAHLr9QqxEGRfAAAL"}]
+KnTGBNQKbqRbBXpWAAAK: Sending packet MESSAGE data 0{"sid":"O5KUAHLr9QqxEGRfAAAL"}
+t:  89%|████████▉ | 863/971 [00:10<00:06, 17.34it/s, now=None]t:  89%|████████▉ | 865/971 [00:10<00:06, 16.49it/s, now=None]t:  89%|████████▉ | 868/971 [00:11<00:05, 17.50it/s, now=None]t:  90%|████████▉ | 870/971 [00:11<00:05, 17.46it/s, now=None]t:  90%|████████▉ | 872/971 [00:11<00:05, 18.03it/s, now=None]t:  90%|█████████ | 874/971 [00:11<00:05, 17.72it/s, now=None]t:  90%|█████████ | 876/971 [00:11<00:05, 18.02it/s, now=None]t:  90%|█████████ | 878/971 [00:11<00:05, 18.52it/s, now=None]t:  91%|█████████ | 881/971 [00:11<00:04, 19.18it/s, now=None]t:  91%|█████████ | 884/971 [00:11<00:04, 19.64it/s, now=None]t:  91%|█████████▏| 887/971 [00:12<00:04, 20.40it/s, now=None]t:  92%|█████████▏| 890/971 [00:12<00:03, 20.71it/s, now=None]t:  92%|█████████▏| 893/971 [00:12<00:03, 20.75it/s, now=None]t:  92%|█████████▏| 896/971 [00:12<00:03, 19.23it/s, now=None]t:  93%|█████████▎| 899/971 [00:12<00:03, 19.33it/s, now=None]t:  93%|█████████▎| 902/971 [00:12<00:03, 20.25it/s, now=None]t:  93%|█████████▎| 905/971 [00:12<00:03, 20.22it/s, now=None]t:  94%|█████████▎| 908/971 [00:13<00:03, 20.26it/s, now=None]t:  94%|█████████▍| 911/971 [00:13<00:02, 20.78it/s, now=None]t:  94%|█████████▍| 914/971 [00:13<00:02, 20.80it/s, now=None]t:  94%|█████████▍| 917/971 [00:13<00:02, 20.19it/s, now=None]t:  95%|█████████▍| 920/971 [00:13<00:02, 20.85it/s, now=None]t:  95%|█████████▌| 923/971 [00:13<00:02, 21.29it/s, now=None]t:  95%|█████████▌| 926/971 [00:13<00:02, 21.64it/s, now=None]t:  96%|█████████▌| 929/971 [00:14<00:01, 21.79it/s, now=None]t:  96%|█████████▌| 932/971 [00:14<00:01, 21.81it/s, now=None]t:  96%|█████████▋| 935/971 [00:14<00:01, 21.72it/s, now=None]t:  97%|█████████▋| 938/971 [00:14<00:01, 22.31it/s, now=None]t:  97%|█████████▋| 941/971 [00:14<00:01, 21.42it/s, now=None]Vve5_a4NkaiGlbo-AAAG: Received packet CLOSE data 
+t:  97%|█████████▋| 944/971 [00:14<00:01, 21.63it/s, now=None]t:  98%|█████████▊| 947/971 [00:14<00:01, 21.36it/s, now=None]t:  98%|█████████▊| 950/971 [00:14<00:00, 21.65it/s, now=None]t:  98%|█████████▊| 953/971 [00:15<00:00, 21.68it/s, now=None]t:  98%|█████████▊| 956/971 [00:15<00:00, 21.60it/s, now=None]t:  99%|█████████▉| 959/971 [00:15<00:00, 20.18it/s, now=None]t:  99%|█████████▉| 962/971 [00:15<00:00, 19.52it/s, now=None]QQOnUBOk0oGi9zSHAAAM: Sending packet OPEN data {'sid': 'QQOnUBOk0oGi9zSHAAAM', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+t:  99%|█████████▉| 965/971 [00:15<00:00, 20.24it/s, now=None]t: 100%|█████████▉| 968/971 [00:15<00:00, 20.57it/s, now=None]QQOnUBOk0oGi9zSHAAAM: Received packet MESSAGE data 0
+emitting event "connected" to SMftBvY_DS_Iyu0uAAAN [/]
+QQOnUBOk0oGi9zSHAAAM: Sending packet MESSAGE data 2["connected",{"sid":"SMftBvY_DS_Iyu0uAAAN"}]
+QQOnUBOk0oGi9zSHAAAM: Sending packet MESSAGE data 0{"sid":"SMftBvY_DS_Iyu0uAAAN"}
+t: 100%|██████████| 971/971 [00:16<00:00, 20.70it/s, now=None]                                                              emitting event "progress" to 29eHJK3BgbJfduGAAAAH [/]
+emitting event "progress" to 29eHJK3BgbJfduGAAAAH [/]
+emitting event "download" to 29eHJK3BgbJfduGAAAAH [/]
+V2jY-x5nfWW_CEg5AAAI: Sending packet PING data None
+V2jY-x5nfWW_CEg5AAAI: Received packet PONG data 
+KnTGBNQKbqRbBXpWAAAK: Sending packet PING data None
+QQOnUBOk0oGi9zSHAAAM: Sending packet PING data None
+V2jY-x5nfWW_CEg5AAAI: Sending packet CLOSE data None
+KnTGBNQKbqRbBXpWAAAK: Client is gone, closing socket
+Invalid session KnTGBNQKbqRbBXpWAAAK
+IEo8nVe3uUys1LZhAAAO: Sending packet OPEN data {'sid': 'IEo8nVe3uUys1LZhAAAO', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+IEo8nVe3uUys1LZhAAAO: Received packet MESSAGE data 0
+emitting event "connected" to 9fK0qxP5mQM4_CoLAAAP [/]
+IEo8nVe3uUys1LZhAAAO: Sending packet MESSAGE data 2["connected",{"sid":"9fK0qxP5mQM4_CoLAAAP"}]
+IEo8nVe3uUys1LZhAAAO: Sending packet MESSAGE data 0{"sid":"9fK0qxP5mQM4_CoLAAAP"}
+QQOnUBOk0oGi9zSHAAAM: Received packet CLOSE data 
+3T4O4OIomYLYSAKHAAAQ: Sending packet OPEN data {'sid': '3T4O4OIomYLYSAKHAAAQ', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+3T4O4OIomYLYSAKHAAAQ: Received packet MESSAGE data 0
+emitting event "connected" to pmQIN_O59wideHoVAAAR [/]
+3T4O4OIomYLYSAKHAAAQ: Sending packet MESSAGE data 2["connected",{"sid":"pmQIN_O59wideHoVAAAR"}]
+3T4O4OIomYLYSAKHAAAQ: Sending packet MESSAGE data 0{"sid":"pmQIN_O59wideHoVAAAR"}
+IEo8nVe3uUys1LZhAAAO: Sending packet PING data None
+3T4O4OIomYLYSAKHAAAQ: Sending packet PING data None
+9f5PfkjJJrKOK5yiAAAS: Sending packet OPEN data {'sid': '9f5PfkjJJrKOK5yiAAAS', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+IEo8nVe3uUys1LZhAAAO: Client is gone, closing socket
+Invalid session IEo8nVe3uUys1LZhAAAO
+uOEEGSb8PiQQmD-uAAAT: Sending packet OPEN data {'sid': 'uOEEGSb8PiQQmD-uAAAT', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+uOEEGSb8PiQQmD-uAAAT: Received packet MESSAGE data 0
+emitting event "connected" to p1iUdX084VH_Z_bFAAAU [/]
+uOEEGSb8PiQQmD-uAAAT: Sending packet MESSAGE data 2["connected",{"sid":"p1iUdX084VH_Z_bFAAAU"}]
+uOEEGSb8PiQQmD-uAAAT: Sending packet MESSAGE data 0{"sid":"p1iUdX084VH_Z_bFAAAU"}
+3T4O4OIomYLYSAKHAAAQ: Received packet CLOSE data 
+FSZhCbA-z4nxiR6LAAAV: Sending packet OPEN data {'sid': 'FSZhCbA-z4nxiR6LAAAV', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+FSZhCbA-z4nxiR6LAAAV: Received packet MESSAGE data 0
+emitting event "connected" to 60cY6MCVqAotrz1MAAAW [/]
+FSZhCbA-z4nxiR6LAAAV: Sending packet MESSAGE data 2["connected",{"sid":"60cY6MCVqAotrz1MAAAW"}]
+FSZhCbA-z4nxiR6LAAAV: Sending packet MESSAGE data 0{"sid":"60cY6MCVqAotrz1MAAAW"}
+90hxsCCZa8_51ps8AAAX: Sending packet OPEN data {'sid': '90hxsCCZa8_51ps8AAAX', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+90hxsCCZa8_51ps8AAAX: Received packet MESSAGE data 0
+emitting event "connected" to XlS3qbxi9NzTN-C5AAAY [/]
+90hxsCCZa8_51ps8AAAX: Sending packet MESSAGE data 2["connected",{"sid":"XlS3qbxi9NzTN-C5AAAY"}]
+90hxsCCZa8_51ps8AAAX: Sending packet MESSAGE data 0{"sid":"XlS3qbxi9NzTN-C5AAAY"}
+9f5PfkjJJrKOK5yiAAAS: Sending packet PING data None
+uOEEGSb8PiQQmD-uAAAT: Sending packet PING data None
+FSZhCbA-z4nxiR6LAAAV: Sending packet PING data None
+FSZhCbA-z4nxiR6LAAAV: Received packet PONG data 
+90hxsCCZa8_51ps8AAAX: Sending packet PING data None
+9f5PfkjJJrKOK5yiAAAS: Client is gone, closing socket
+9f5PfkjJJrKOK5yiAAAS: Client is gone, closing socket
+uOEEGSb8PiQQmD-uAAAT: Client is gone, closing socket
+Invalid session uOEEGSb8PiQQmD-uAAAT
+5Xy9_d7u1XPSV6LXAAAZ: Sending packet OPEN data {'sid': '5Xy9_d7u1XPSV6LXAAAZ', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+5Xy9_d7u1XPSV6LXAAAZ: Received packet MESSAGE data 0
+emitting event "connected" to bLQZUiIT_sP6L0z1AAAa [/]
+5Xy9_d7u1XPSV6LXAAAZ: Sending packet MESSAGE data 2["connected",{"sid":"bLQZUiIT_sP6L0z1AAAa"}]
+5Xy9_d7u1XPSV6LXAAAZ: Sending packet MESSAGE data 0{"sid":"bLQZUiIT_sP6L0z1AAAa"}
+FSZhCbA-z4nxiR6LAAAV: Sending packet CLOSE data None
+R77oogB8r1AG4m_2AAAb: Sending packet OPEN data {'sid': 'R77oogB8r1AG4m_2AAAb', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+R77oogB8r1AG4m_2AAAb: Received packet MESSAGE data 0
+emitting event "connected" to HeSQ8UQYk0k72Q4mAAAc [/]
+R77oogB8r1AG4m_2AAAb: Sending packet MESSAGE data 2["connected",{"sid":"HeSQ8UQYk0k72Q4mAAAc"}]
+R77oogB8r1AG4m_2AAAb: Sending packet MESSAGE data 0{"sid":"HeSQ8UQYk0k72Q4mAAAc"}
+90hxsCCZa8_51ps8AAAX: Received packet CLOSE data 
+RT3V17iNzRqtjHNzAAAd: Sending packet OPEN data {'sid': 'RT3V17iNzRqtjHNzAAAd', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+RT3V17iNzRqtjHNzAAAd: Received packet MESSAGE data 0
+emitting event "connected" to Bemj-uWALRL61gbZAAAe [/]
+RT3V17iNzRqtjHNzAAAd: Sending packet MESSAGE data 2["connected",{"sid":"Bemj-uWALRL61gbZAAAe"}]
+RT3V17iNzRqtjHNzAAAd: Sending packet MESSAGE data 0{"sid":"Bemj-uWALRL61gbZAAAe"}
+5Xy9_d7u1XPSV6LXAAAZ: Sending packet PING data None
+5Xy9_d7u1XPSV6LXAAAZ: Received packet PONG data 
+R77oogB8r1AG4m_2AAAb: Sending packet PING data None
+RT3V17iNzRqtjHNzAAAd: Sending packet PING data None
+RT3V17iNzRqtjHNzAAAd: Received packet PONG data 
+5Xy9_d7u1XPSV6LXAAAZ: Sending packet CLOSE data None
+8bBrZTkgMXV2dCxAAAAf: Sending packet OPEN data {'sid': '8bBrZTkgMXV2dCxAAAAf', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+8bBrZTkgMXV2dCxAAAAf: Received packet MESSAGE data 0
+emitting event "connected" to VqUktc5T6TZqndgnAAAg [/]
+8bBrZTkgMXV2dCxAAAAf: Sending packet MESSAGE data 2["connected",{"sid":"VqUktc5T6TZqndgnAAAg"}]
+8bBrZTkgMXV2dCxAAAAf: Sending packet MESSAGE data 0{"sid":"VqUktc5T6TZqndgnAAAg"}
+R77oogB8r1AG4m_2AAAb: Received packet CLOSE data 
+JQ4nR9Vpds5hUfoDAAAh: Sending packet OPEN data {'sid': 'JQ4nR9Vpds5hUfoDAAAh', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+JQ4nR9Vpds5hUfoDAAAh: Received packet MESSAGE data 0
+emitting event "connected" to ttS_7hJHxwhIEBpxAAAi [/]
+JQ4nR9Vpds5hUfoDAAAh: Sending packet MESSAGE data 2["connected",{"sid":"ttS_7hJHxwhIEBpxAAAi"}]
+JQ4nR9Vpds5hUfoDAAAh: Sending packet MESSAGE data 0{"sid":"ttS_7hJHxwhIEBpxAAAi"}
+RT3V17iNzRqtjHNzAAAd: Sending packet CLOSE data None
+SpLz4TkLdQrWN5zcAAAj: Sending packet OPEN data {'sid': 'SpLz4TkLdQrWN5zcAAAj', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+SpLz4TkLdQrWN5zcAAAj: Received packet MESSAGE data 0
+emitting event "connected" to YuiEmEhG6VVVj5amAAAk [/]
+SpLz4TkLdQrWN5zcAAAj: Sending packet MESSAGE data 2["connected",{"sid":"YuiEmEhG6VVVj5amAAAk"}]
+SpLz4TkLdQrWN5zcAAAj: Sending packet MESSAGE data 0{"sid":"YuiEmEhG6VVVj5amAAAk"}
+8bBrZTkgMXV2dCxAAAAf: Sending packet PING data None
+8bBrZTkgMXV2dCxAAAAf: Received packet PONG data 
+JQ4nR9Vpds5hUfoDAAAh: Sending packet PING data None
+JQ4nR9Vpds5hUfoDAAAh: Received packet PONG data 
+SpLz4TkLdQrWN5zcAAAj: Sending packet PING data None
+SpLz4TkLdQrWN5zcAAAj: Received packet PONG data 
+8bBrZTkgMXV2dCxAAAAf: Sending packet CLOSE data None
+2iKVYF4fEiXUF995AAAl: Sending packet OPEN data {'sid': '2iKVYF4fEiXUF995AAAl', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+2iKVYF4fEiXUF995AAAl: Received packet MESSAGE data 0
+emitting event "connected" to 2OlrkMs9hqiJuQYCAAAm [/]
+2iKVYF4fEiXUF995AAAl: Sending packet MESSAGE data 2["connected",{"sid":"2OlrkMs9hqiJuQYCAAAm"}]
+2iKVYF4fEiXUF995AAAl: Sending packet MESSAGE data 0{"sid":"2OlrkMs9hqiJuQYCAAAm"}
+JQ4nR9Vpds5hUfoDAAAh: Sending packet CLOSE data None
+BhB10Vis6nZadjbNAAAn: Sending packet OPEN data {'sid': 'BhB10Vis6nZadjbNAAAn', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+BhB10Vis6nZadjbNAAAn: Received packet MESSAGE data 0
+emitting event "connected" to nJxp3HE9fRVTkk2OAAAo [/]
+BhB10Vis6nZadjbNAAAn: Sending packet MESSAGE data 2["connected",{"sid":"nJxp3HE9fRVTkk2OAAAo"}]
+BhB10Vis6nZadjbNAAAn: Sending packet MESSAGE data 0{"sid":"nJxp3HE9fRVTkk2OAAAo"}
+SpLz4TkLdQrWN5zcAAAj: Sending packet CLOSE data None
+17etQ_pR96VaCGJTAAAp: Sending packet OPEN data {'sid': '17etQ_pR96VaCGJTAAAp', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+17etQ_pR96VaCGJTAAAp: Received packet MESSAGE data 0
+emitting event "connected" to OhVuLMfOqbk7vcaLAAAq [/]
+17etQ_pR96VaCGJTAAAp: Sending packet MESSAGE data 2["connected",{"sid":"OhVuLMfOqbk7vcaLAAAq"}]
+17etQ_pR96VaCGJTAAAp: Sending packet MESSAGE data 0{"sid":"OhVuLMfOqbk7vcaLAAAq"}
+2iKVYF4fEiXUF995AAAl: Sending packet PING data None
+BhB10Vis6nZadjbNAAAn: Sending packet PING data None
+BhB10Vis6nZadjbNAAAn: Received packet PONG data 
+17etQ_pR96VaCGJTAAAp: Sending packet PING data None
+17etQ_pR96VaCGJTAAAp: Received packet PONG data 
+2iKVYF4fEiXUF995AAAl: Client is gone, closing socket
+Invalid session 2iKVYF4fEiXUF995AAAl
+QkwlUDdOnpVpJHe5AAAr: Sending packet OPEN data {'sid': 'QkwlUDdOnpVpJHe5AAAr', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+QkwlUDdOnpVpJHe5AAAr: Received packet MESSAGE data 0
+emitting event "connected" to KXOdtIVJNV-1CVgeAAAs [/]
+QkwlUDdOnpVpJHe5AAAr: Sending packet MESSAGE data 2["connected",{"sid":"KXOdtIVJNV-1CVgeAAAs"}]
+QkwlUDdOnpVpJHe5AAAr: Sending packet MESSAGE data 0{"sid":"KXOdtIVJNV-1CVgeAAAs"}
+BhB10Vis6nZadjbNAAAn: Sending packet CLOSE data None
+DU2bBAWqKuTWgUd9AAAt: Sending packet OPEN data {'sid': 'DU2bBAWqKuTWgUd9AAAt', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+DU2bBAWqKuTWgUd9AAAt: Received packet MESSAGE data 0
+emitting event "connected" to jZcumT20VcRh3csqAAAu [/]
+DU2bBAWqKuTWgUd9AAAt: Sending packet MESSAGE data 2["connected",{"sid":"jZcumT20VcRh3csqAAAu"}]
+DU2bBAWqKuTWgUd9AAAt: Sending packet MESSAGE data 0{"sid":"jZcumT20VcRh3csqAAAu"}
+17etQ_pR96VaCGJTAAAp: Sending packet CLOSE data None
+3_bk8SbPB156RQRWAAAv: Sending packet OPEN data {'sid': '3_bk8SbPB156RQRWAAAv', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+3_bk8SbPB156RQRWAAAv: Received packet MESSAGE data 0
+emitting event "connected" to PHLAkSZ9MMd5D0-qAAAw [/]
+3_bk8SbPB156RQRWAAAv: Sending packet MESSAGE data 2["connected",{"sid":"PHLAkSZ9MMd5D0-qAAAw"}]
+3_bk8SbPB156RQRWAAAv: Sending packet MESSAGE data 0{"sid":"PHLAkSZ9MMd5D0-qAAAw"}
+QkwlUDdOnpVpJHe5AAAr: Sending packet PING data None
+DU2bBAWqKuTWgUd9AAAt: Sending packet PING data None
+3_bk8SbPB156RQRWAAAv: Sending packet PING data None
+3_bk8SbPB156RQRWAAAv: Received packet PONG data 
+QkwlUDdOnpVpJHe5AAAr: Client is gone, closing socket
+Invalid session QkwlUDdOnpVpJHe5AAAr
+JFeU1tKBxfmLor8rAAAx: Sending packet OPEN data {'sid': 'JFeU1tKBxfmLor8rAAAx', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+JFeU1tKBxfmLor8rAAAx: Received packet MESSAGE data 0
+emitting event "connected" to qVHX2FctOijt-sqWAAAy [/]
+JFeU1tKBxfmLor8rAAAx: Sending packet MESSAGE data 2["connected",{"sid":"qVHX2FctOijt-sqWAAAy"}]
+JFeU1tKBxfmLor8rAAAx: Sending packet MESSAGE data 0{"sid":"qVHX2FctOijt-sqWAAAy"}
+DU2bBAWqKuTWgUd9AAAt: Received packet CLOSE data 
+Hc4Rnq160WR6j8UIAAAz: Sending packet OPEN data {'sid': 'Hc4Rnq160WR6j8UIAAAz', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+Hc4Rnq160WR6j8UIAAAz: Received packet MESSAGE data 0
+emitting event "connected" to IFzD3vGCkll7brmXAAA0 [/]
+Hc4Rnq160WR6j8UIAAAz: Sending packet MESSAGE data 2["connected",{"sid":"IFzD3vGCkll7brmXAAA0"}]
+Hc4Rnq160WR6j8UIAAAz: Sending packet MESSAGE data 0{"sid":"IFzD3vGCkll7brmXAAA0"}
+e7hVscAZi2WM7oYgAAA1: Sending packet OPEN data {'sid': 'e7hVscAZi2WM7oYgAAA1', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+e7hVscAZi2WM7oYgAAA1: Received packet MESSAGE data 0
+emitting event "connected" to mlOagxFzYApcLmc1AAA2 [/]
+e7hVscAZi2WM7oYgAAA1: Sending packet MESSAGE data 2["connected",{"sid":"mlOagxFzYApcLmc1AAA2"}]
+e7hVscAZi2WM7oYgAAA1: Sending packet MESSAGE data 0{"sid":"mlOagxFzYApcLmc1AAA2"}
+3_bk8SbPB156RQRWAAAv: Sending packet CLOSE data None
+Iym3EFr7nx4k8D-5AAA3: Sending packet OPEN data {'sid': 'Iym3EFr7nx4k8D-5AAA3', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+Iym3EFr7nx4k8D-5AAA3: Received packet MESSAGE data 0
+emitting event "connected" to TxVPMEJqErolnCPkAAA4 [/]
+Iym3EFr7nx4k8D-5AAA3: Sending packet MESSAGE data 2["connected",{"sid":"TxVPMEJqErolnCPkAAA4"}]
+Iym3EFr7nx4k8D-5AAA3: Sending packet MESSAGE data 0{"sid":"TxVPMEJqErolnCPkAAA4"}
+n1fsTo9YqRjcZAiVAAA5: Sending packet OPEN data {'sid': 'n1fsTo9YqRjcZAiVAAA5', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+n1fsTo9YqRjcZAiVAAA5: Received packet MESSAGE data 0
+emitting event "connected" to h6yS_EuOxLF7QGWVAAA6 [/]
+n1fsTo9YqRjcZAiVAAA5: Sending packet MESSAGE data 2["connected",{"sid":"h6yS_EuOxLF7QGWVAAA6"}]
+n1fsTo9YqRjcZAiVAAA5: Sending packet MESSAGE data 0{"sid":"h6yS_EuOxLF7QGWVAAA6"}
+JFeU1tKBxfmLor8rAAAx: Sending packet PING data None
+Hc4Rnq160WR6j8UIAAAz: Sending packet PING data None
+e7hVscAZi2WM7oYgAAA1: Sending packet PING data None
+Iym3EFr7nx4k8D-5AAA3: Sending packet PING data None
+Iym3EFr7nx4k8D-5AAA3: Received packet PONG data 
+n1fsTo9YqRjcZAiVAAA5: Sending packet PING data None
+emitting event "progress" to h6yS_EuOxLF7QGWVAAA6 [/]
+n1fsTo9YqRjcZAiVAAA5: Sending packet MESSAGE data 2["progress",{"progress":10,"message":"Video subido"}]
+emitting event "progress" to h6yS_EuOxLF7QGWVAAA6 [/]
+n1fsTo9YqRjcZAiVAAA5: Sending packet MESSAGE data 2["progress",{"progress":20,"message":"Verificando formato del video"}]
+emitting event "progress" to h6yS_EuOxLF7QGWVAAA6 [/]
+n1fsTo9YqRjcZAiVAAA5: Sending packet MESSAGE data 2["progress",{"progress":30,"message":"Video convertido a MP4"}]
+emitting event "progress" to h6yS_EuOxLF7QGWVAAA6 [/]
+n1fsTo9YqRjcZAiVAAA5: Sending packet MESSAGE data 2["progress",{"progress":45,"message":"Cargando datos de mapeo"}]
+emitting event "progress" to h6yS_EuOxLF7QGWVAAA6 [/]
+n1fsTo9YqRjcZAiVAAA5: Sending packet MESSAGE data 2["progress",{"progress":70,"message":"Videos ajustados"}]
+Cliente conectado: QvrP8WYqj0WngwRwAAAJ
+Cliente conectado: O5KUAHLr9QqxEGRfAAAL
+Cliente conectado: SMftBvY_DS_Iyu0uAAAN
+Moviepy - Done !
+Moviepy - video ready static/videos/output/final_superbowl.mp4
+Cliente conectado: 9fK0qxP5mQM4_CoLAAAP
+Cliente conectado: pmQIN_O59wideHoVAAAR
+Cliente conectado: p1iUdX084VH_Z_bFAAAU
+Cliente conectado: 60cY6MCVqAotrz1MAAAW
+Cliente conectado: XlS3qbxi9NzTN-C5AAAY
+Cliente conectado: bLQZUiIT_sP6L0z1AAAa
+Cliente conectado: HeSQ8UQYk0k72Q4mAAAc
+Cliente conectado: Bemj-uWALRL61gbZAAAe
+Cliente conectado: VqUktc5T6TZqndgnAAAg
+Cliente conectado: ttS_7hJHxwhIEBpxAAAi
+Cliente conectado: YuiEmEhG6VVVj5amAAAk
+Cliente conectado: 2OlrkMs9hqiJuQYCAAAm
+Cliente conectado: nJxp3HE9fRVTkk2OAAAo
+Cliente conectado: OhVuLMfOqbk7vcaLAAAq
+Cliente conectado: KXOdtIVJNV-1CVgeAAAs
+Cliente conectado: jZcumT20VcRh3csqAAAu
+Cliente conectado: PHLAkSZ9MMd5D0-qAAAw
+Cliente conectado: qVHX2FctOijt-sqWAAAy
+Cliente conectado: IFzD3vGCkll7brmXAAA0
+Cliente conectado: mlOagxFzYApcLmc1AAA2
+Cliente conectado: TxVPMEJqErolnCPkAAA4
+Cliente conectado: h6yS_EuOxLF7QGWVAAA6
+Video guardado en: static/videos/uploaded/superbowl.mp4
+Moviepy - Building video static/videos/output/final_superbowl.mp4.
+MoviePy - Writing audio in final_superbowlTEMP_MPY_wvf_snd.mp4
+chunk:   0%|          | 0/714 [00:00<?, ?it/s, now=None]chunk:  23%|██▎       | 163/714 [00:00<00:00, 1626.85it/s, now=None]chunk:  49%|████▊     | 348/714 [00:00<00:00, 1755.69it/s, now=None]chunk:  73%|███████▎  | 524/714 [00:00<00:00, 1724.12it/s, now=None]chunk:  98%|█████████▊| 697/714 [00:00<00:00, 1663.96it/s, now=None]                                                                    MoviePy - Done.
+Moviepy - Writing video static/videos/output/final_superbowl.mp4
+
+t:   0%|          | 0/971 [00:00<?, ?it/s, now=None]t:   3%|▎         | 29/971 [00:00<00:03, 286.69it/s, now=None]t:   6%|▌         | 58/971 [00:00<00:06, 135.35it/s, now=None]t:   9%|▉         | 86/971 [00:00<00:05, 172.50it/s, now=None]t:  12%|█▏        | 112/971 [00:00<00:04, 196.63it/s, now=None]t:  14%|█▍        | 136/971 [00:00<00:04, 200.84it/s, now=None]t:  16%|█▋        | 159/971 [00:00<00:04, 199.38it/s, now=None]t:  19%|█▉        | 183/971 [00:00<00:03, 208.72it/s, now=None]t:  21%|██        | 206/971 [00:01<00:04, 189.71it/s, now=None]t:  25%|██▍       | 238/971 [00:01<00:03, 222.93it/s, now=None]t:  27%|██▋       | 262/971 [00:01<00:03, 227.11it/s, now=None]t:  30%|██▉       | 287/971 [00:01<00:03, 226.96it/s, now=None]t:  32%|███▏      | 311/971 [00:01<00:02, 229.26it/s, now=None]t:  35%|███▍      | 338/971 [00:01<00:02, 240.49it/s, now=None]t:  37%|███▋      | 363/971 [00:01<00:02, 234.39it/s, now=None]t:  40%|███▉      | 387/971 [00:01<00:02, 227.61it/s, now=None]t:  42%|████▏     | 410/971 [00:01<00:02, 217.14it/s, now=None]t:  45%|████▍     | 436/971 [00:02<00:02, 221.92it/s, now=None]t:  47%|████▋     | 459/971 [00:02<00:02, 208.88it/s, now=None]JFeU1tKBxfmLor8rAAAx: Client is gone, closing socket
+t:  50%|█████     | 490/971 [00:02<00:02, 231.10it/s, now=None]Invalid session JFeU1tKBxfmLor8rAAAx
+t:  53%|█████▎    | 514/971 [00:02<00:01, 229.94it/s, now=None]t:  56%|█████▌    | 539/971 [00:02<00:01, 235.02it/s, now=None]t:  58%|█████▊    | 565/971 [00:02<00:01, 239.36it/s, now=None]t:  61%|██████    | 590/971 [00:02<00:01, 230.82it/s, now=None]t:  63%|██████▎   | 614/971 [00:02<00:01, 229.34it/s, now=None]t:  66%|██████▌   | 638/971 [00:02<00:01, 201.83it/s, now=None]t:  68%|██████▊   | 659/971 [00:03<00:01, 197.78it/s, now=None]t:  70%|███████   | 681/971 [00:03<00:01, 202.56it/s, now=None]t:  73%|███████▎  | 710/971 [00:03<00:01, 226.34it/s, now=None]t:  76%|███████▌  | 734/971 [00:03<00:01, 139.15it/s, now=None]aH0HRTPHH9ZZhlptAAA7: Sending packet OPEN data {'sid': 'aH0HRTPHH9ZZhlptAAA7', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+aH0HRTPHH9ZZhlptAAA7: Received packet MESSAGE data 0
+emitting event "connected" to Solv2gWgCc0nYcXbAAA8 [/]
+aH0HRTPHH9ZZhlptAAA7: Sending packet MESSAGE data 2["connected",{"sid":"Solv2gWgCc0nYcXbAAA8"}]
+aH0HRTPHH9ZZhlptAAA7: Sending packet MESSAGE data 0{"sid":"Solv2gWgCc0nYcXbAAA8"}
+Hc4Rnq160WR6j8UIAAAz: Client is gone, closing socket
+t:  78%|███████▊  | 753/971 [00:04<00:04, 52.76it/s, now=None] t:  79%|███████▉  | 767/971 [00:05<00:05, 40.52it/s, now=None]t:  80%|████████  | 778/971 [00:05<00:05, 32.77it/s, now=None]t:  81%|████████  | 786/971 [00:06<00:06, 28.43it/s, now=None]t:  82%|████████▏ | 792/971 [00:06<00:07, 25.31it/s, now=None]t:  82%|████████▏ | 797/971 [00:07<00:07, 24.46it/s, now=None]t:  82%|████████▏ | 801/971 [00:07<00:07, 24.01it/s, now=None]t:  83%|████████▎ | 805/971 [00:07<00:06, 23.78it/s, now=None]t:  83%|████████▎ | 808/971 [00:07<00:06, 23.41it/s, now=None]t:  84%|████████▎ | 811/971 [00:07<00:06, 23.39it/s, now=None]t:  84%|████████▍ | 814/971 [00:07<00:06, 23.26it/s, now=None]t:  84%|████████▍ | 817/971 [00:07<00:06, 22.62it/s, now=None]t:  84%|████████▍ | 820/971 [00:08<00:07, 21.15it/s, now=None]t:  85%|████████▍ | 823/971 [00:08<00:07, 19.86it/s, now=None]t:  85%|████████▌ | 826/971 [00:08<00:07, 20.11it/s, now=None]t:  85%|████████▌ | 829/971 [00:08<00:07, 19.74it/s, now=None]t:  86%|████████▌ | 832/971 [00:08<00:07, 18.11it/s, now=None]t:  86%|████████▌ | 834/971 [00:08<00:08, 16.36it/s, now=None]t:  86%|████████▌ | 836/971 [00:09<00:08, 16.68it/s, now=None]t:  86%|████████▋ | 838/971 [00:09<00:08, 16.21it/s, now=None]t:  87%|████████▋ | 841/971 [00:09<00:07, 17.73it/s, now=None]t:  87%|████████▋ | 843/971 [00:09<00:07, 16.03it/s, now=None]t:  87%|████████▋ | 845/971 [00:09<00:07, 16.52it/s, now=None]e7hVscAZi2WM7oYgAAA1: Client is gone, closing socket
+t:  87%|████████▋ | 847/971 [00:09<00:07, 16.22it/s, now=None]t:  87%|████████▋ | 849/971 [00:09<00:07, 15.45it/s, now=None]t:  88%|████████▊ | 851/971 [00:09<00:07, 16.42it/s, now=None]t:  88%|████████▊ | 854/971 [00:10<00:06, 17.34it/s, now=None]t:  88%|████████▊ | 857/971 [00:10<00:06, 18.69it/s, now=None]t:  89%|████████▊ | 860/971 [00:10<00:05, 19.63it/s, now=None]t:  89%|████████▉ | 862/971 [00:10<00:05, 19.70it/s, now=None]t:  89%|████████▉ | 865/971 [00:10<00:05, 20.53it/s, now=None]t:  89%|████████▉ | 868/971 [00:10<00:04, 21.06it/s, now=None]t:  90%|████████▉ | 871/971 [00:10<00:04, 21.39it/s, now=None]t:  90%|█████████ | 874/971 [00:11<00:04, 21.78it/s, now=None]t:  90%|█████████ | 877/971 [00:11<00:04, 21.81it/s, now=None]t:  91%|█████████ | 880/971 [00:11<00:04, 21.85it/s, now=None]t:  91%|█████████ | 883/971 [00:11<00:04, 20.35it/s, now=None]t:  91%|█████████ | 886/971 [00:11<00:04, 18.07it/s, now=None]t:  92%|█████████▏| 889/971 [00:11<00:04, 19.24it/s, now=None]t:  92%|█████████▏| 892/971 [00:11<00:03, 20.19it/s, now=None]t:  92%|█████████▏| 895/971 [00:12<00:03, 20.92it/s, now=None]t:  92%|█████████▏| 898/971 [00:12<00:03, 20.47it/s, now=None]t:  93%|█████████▎| 901/971 [00:12<00:03, 21.08it/s, now=None]t:  93%|█████████▎| 904/971 [00:12<00:03, 21.20it/s, now=None]t:  93%|█████████▎| 907/971 [00:12<00:03, 20.41it/s, now=None]Iym3EFr7nx4k8D-5AAA3: Sending packet CLOSE data None
+t:  94%|█████████▎| 910/971 [00:12<00:03, 18.94it/s, now=None]t:  94%|█████████▍| 912/971 [00:12<00:03, 19.02it/s, now=None]t:  94%|█████████▍| 915/971 [00:13<00:02, 19.76it/s, now=None]t:  94%|█████████▍| 917/971 [00:13<00:02, 18.96it/s, now=None]t:  95%|█████████▍| 920/971 [00:13<00:02, 19.19it/s, now=None]t:  95%|█████████▌| 923/971 [00:13<00:02, 19.75it/s, now=None]t:  95%|█████████▌| 926/971 [00:13<00:02, 20.59it/s, now=None]t:  96%|█████████▌| 929/971 [00:13<00:02, 20.48it/s, now=None]t:  96%|█████████▌| 932/971 [00:13<00:01, 20.27it/s, now=None]pOHA9-5W_L9rUtuvAAA9: Sending packet OPEN data {'sid': 'pOHA9-5W_L9rUtuvAAA9', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+t:  96%|█████████▋| 935/971 [00:14<00:01, 18.52it/s, now=None]pOHA9-5W_L9rUtuvAAA9: Received packet MESSAGE data 0
+emitting event "connected" to 6IKNMIxPlcnOM1IIAAA- [/]
+pOHA9-5W_L9rUtuvAAA9: Sending packet MESSAGE data 2["connected",{"sid":"6IKNMIxPlcnOM1IIAAA-"}]
+pOHA9-5W_L9rUtuvAAA9: Sending packet MESSAGE data 0{"sid":"6IKNMIxPlcnOM1IIAAA-"}
+t:  97%|█████████▋| 938/971 [00:14<00:01, 18.94it/s, now=None]t:  97%|█████████▋| 940/971 [00:14<00:01, 18.92it/s, now=None]t:  97%|█████████▋| 943/971 [00:14<00:01, 19.74it/s, now=None]t:  97%|█████████▋| 946/971 [00:14<00:01, 20.14it/s, now=None]t:  98%|█████████▊| 949/971 [00:14<00:01, 21.13it/s, now=None]t:  98%|█████████▊| 952/971 [00:14<00:00, 20.51it/s, now=None]t:  98%|█████████▊| 955/971 [00:15<00:00, 21.13it/s, now=None]t:  99%|█████████▊| 958/971 [00:15<00:00, 20.89it/s, now=None]t:  99%|█████████▉| 961/971 [00:15<00:00, 21.41it/s, now=None]t:  99%|█████████▉| 964/971 [00:15<00:00, 20.44it/s, now=None]t: 100%|█████████▉| 967/971 [00:15<00:00, 20.01it/s, now=None]t: 100%|█████████▉| 970/971 [00:15<00:00, 18.77it/s, now=None]                                                              emitting event "progress" to h6yS_EuOxLF7QGWVAAA6 [/]
+n1fsTo9YqRjcZAiVAAA5: Client is gone, closing socket
+n1fsTo9YqRjcZAiVAAA5: Client is gone, closing socket
+emitting event "progress" to h6yS_EuOxLF7QGWVAAA6 [/]
+emitting event "download" to h6yS_EuOxLF7QGWVAAA6 [/]
+Invalid session n1fsTo9YqRjcZAiVAAA5
+5N3jx4-HgUnWb5FzAAA_: Sending packet OPEN data {'sid': '5N3jx4-HgUnWb5FzAAA_', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+5N3jx4-HgUnWb5FzAAA_: Received packet MESSAGE data 0
+emitting event "connected" to VsVXnVb6qIKuw6QbAABA [/]
+5N3jx4-HgUnWb5FzAAA_: Sending packet MESSAGE data 2["connected",{"sid":"VsVXnVb6qIKuw6QbAABA"}]
+5N3jx4-HgUnWb5FzAAA_: Sending packet MESSAGE data 0{"sid":"VsVXnVb6qIKuw6QbAABA"}
+aH0HRTPHH9ZZhlptAAA7: Sending packet PING data None
+pOHA9-5W_L9rUtuvAAA9: Sending packet PING data None
+pOHA9-5W_L9rUtuvAAA9: Received packet PONG data 
+5N3jx4-HgUnWb5FzAAA_: Sending packet PING data None
+aH0HRTPHH9ZZhlptAAA7: Client is gone, closing socket
+Invalid session aH0HRTPHH9ZZhlptAAA7
+yj7yF_mRJporInAGAABB: Sending packet OPEN data {'sid': 'yj7yF_mRJporInAGAABB', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+yj7yF_mRJporInAGAABB: Received packet MESSAGE data 0
+emitting event "connected" to dbb5aYoRe7CacsOdAABC [/]
+yj7yF_mRJporInAGAABB: Sending packet MESSAGE data 2["connected",{"sid":"dbb5aYoRe7CacsOdAABC"}]
+yj7yF_mRJporInAGAABB: Sending packet MESSAGE data 0{"sid":"dbb5aYoRe7CacsOdAABC"}
+pOHA9-5W_L9rUtuvAAA9: Sending packet CLOSE data None
+vb6Sy5hCBAJ_iQ7EAABD: Sending packet OPEN data {'sid': 'vb6Sy5hCBAJ_iQ7EAABD', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+vb6Sy5hCBAJ_iQ7EAABD: Received packet MESSAGE data 0
+emitting event "connected" to N0kChBCoYa0YBAi9AABE [/]
+vb6Sy5hCBAJ_iQ7EAABD: Sending packet MESSAGE data 2["connected",{"sid":"N0kChBCoYa0YBAi9AABE"}]
+vb6Sy5hCBAJ_iQ7EAABD: Sending packet MESSAGE data 0{"sid":"N0kChBCoYa0YBAi9AABE"}
+5N3jx4-HgUnWb5FzAAA_: Received packet CLOSE data 
+JyYzZsLzBk7tzYozAABF: Sending packet OPEN data {'sid': 'JyYzZsLzBk7tzYozAABF', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+JyYzZsLzBk7tzYozAABF: Received packet MESSAGE data 0
+emitting event "connected" to shz7o4y7TxSlIwCaAABG [/]
+JyYzZsLzBk7tzYozAABF: Sending packet MESSAGE data 2["connected",{"sid":"shz7o4y7TxSlIwCaAABG"}]
+JyYzZsLzBk7tzYozAABF: Sending packet MESSAGE data 0{"sid":"shz7o4y7TxSlIwCaAABG"}
+yj7yF_mRJporInAGAABB: Sending packet PING data None
+yj7yF_mRJporInAGAABB: Received packet PONG data 
+vb6Sy5hCBAJ_iQ7EAABD: Sending packet PING data None
+vb6Sy5hCBAJ_iQ7EAABD: Received packet PONG data 
+JyYzZsLzBk7tzYozAABF: Sending packet PING data None
+yj7yF_mRJporInAGAABB: Sending packet CLOSE data None
+SNu9Umh-mcsjf2k5AABH: Sending packet OPEN data {'sid': 'SNu9Umh-mcsjf2k5AABH', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+SNu9Umh-mcsjf2k5AABH: Received packet MESSAGE data 0
+emitting event "connected" to TpdnEF1ft60FNQEcAABI [/]
+SNu9Umh-mcsjf2k5AABH: Sending packet MESSAGE data 2["connected",{"sid":"TpdnEF1ft60FNQEcAABI"}]
+SNu9Umh-mcsjf2k5AABH: Sending packet MESSAGE data 0{"sid":"TpdnEF1ft60FNQEcAABI"}
+vb6Sy5hCBAJ_iQ7EAABD: Sending packet CLOSE data None
+mv-JIDAvnxQLwtxdAABJ: Sending packet OPEN data {'sid': 'mv-JIDAvnxQLwtxdAABJ', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+mv-JIDAvnxQLwtxdAABJ: Received packet MESSAGE data 0
+emitting event "connected" to kkXquQbCDxbI0VlAAABK [/]
+mv-JIDAvnxQLwtxdAABJ: Sending packet MESSAGE data 2["connected",{"sid":"kkXquQbCDxbI0VlAAABK"}]
+mv-JIDAvnxQLwtxdAABJ: Sending packet MESSAGE data 0{"sid":"kkXquQbCDxbI0VlAAABK"}
+JyYzZsLzBk7tzYozAABF: Received packet CLOSE data 
+lzZHk2xMy177dzOVAABL: Sending packet OPEN data {'sid': 'lzZHk2xMy177dzOVAABL', 'upgrades': ['websocket'], 'pingTimeout': 20000, 'pingInterval': 25000}
+lzZHk2xMy177dzOVAABL: Received packet MESSAGE data 0
+emitting event "connected" to J-pEtgLvmX-SeN6lAABM [/]
+lzZHk2xMy177dzOVAABL: Sending packet MESSAGE data 2["connected",{"sid":"J-pEtgLvmX-SeN6lAABM"}]
+lzZHk2xMy177dzOVAABL: Sending packet MESSAGE data 0{"sid":"J-pEtgLvmX-SeN6lAABM"}
