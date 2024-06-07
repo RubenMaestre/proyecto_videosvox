@@ -69,7 +69,7 @@ Las contribuciones son bienvenidas. Si deseas colaborar, por favor abre un issue
 
 ## Enlace a la aplicación online
 
-voxvideos.rubenmaestre.com
+- **voxvideos.rubenmaestre.com**
 ---
 
 **Realizado por Rubén Maestre**
