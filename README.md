@@ -67,7 +67,9 @@ Para consumo interno, he desarrollado un sistema de estadísticas que permitirá
 
 Las contribuciones son bienvenidas. Si deseas colaborar, por favor abre un issue o envía un pull request con tus mejoras.
 
+## Enlace a la aplicación online
 
+voxvideos.rubenmaestre.com
 ---
 
 **Realizado por Rubén Maestre**
